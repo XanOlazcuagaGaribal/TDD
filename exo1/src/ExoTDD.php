@@ -11,23 +11,12 @@ class ExoTDD
     passée en paramètre est bissextile ou non. Une année bissextile est divisible
     par 4 mais pas par 100, sauf si elle est également divisible par 400.*/
     
-    public static function exo1(int $annee){
-        $b = false;
-
-        if($annee % 400 === 0){
-            $b = true;
+    public static function isLeap(int $annee){
+        
+        if((($annee % 4) == 0 && ($annee % 100) != 0) || (($annee % 100) == 0 && ($annee % 400) == 0)) {
+            return true;
+        } else {
+            return false;
         }
-        else if($annee % 100 === 0){
-            $b = false;
-        }
-        else if($annee % 4 === 0){
-            $b = true;
-        }
-        else{
-            $b = false;
-        }
-
-        return $b;
-
     }
 }

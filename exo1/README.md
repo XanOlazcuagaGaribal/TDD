@@ -1,4 +1,4 @@
-Exercises to learn regular expressions.
+Exercises to test leap years
 
 ## Installation
 
