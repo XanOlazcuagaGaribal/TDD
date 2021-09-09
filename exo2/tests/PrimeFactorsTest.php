@@ -19,8 +19,8 @@ class PrimeFactorsTest extends TestCase
         $this->assertEquals([3], PrimeFactors::generate(3), "3 a un seul facteur premier");
     }
 
-    /*public function testFour()
+    public function testFour()
     {
         $this->assertEquals([2, 2], PrimeFactors::generate(4), "4 a 2 facteurs premiers");
-    }*/
+    }
 }

@@ -15,9 +15,14 @@ class PrimeFactors{
         $array = [];
 
         if($number > 1){
-            $array[] = $number;
+            if($number % 2 === 0){
+                $array[] = 2;
+                $number /= 2;
+            }
+            if($number > 1){
+                $array[] = $number;
+            }
         }
-
         return $array;
     }
 }
