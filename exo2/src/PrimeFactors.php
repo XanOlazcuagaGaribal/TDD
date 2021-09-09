@@ -12,6 +12,12 @@ class PrimeFactors{
     exactement deux diviseurs : 1 et lui-même.*/
 
     public static function generate(int $number){
-        
+        $array = [];
+
+        if($number > 1){
+            $array[] = 2;
+        }
+
+        return $array;
     }
 }

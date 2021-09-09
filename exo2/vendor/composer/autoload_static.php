@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643
+class ComposerStaticInitafe7b78787dd2c940fa4dc325986d539
 {
     public static $files = array (
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -41,8 +41,8 @@ class ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -72,7 +72,6 @@ class ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'ExoTDD' => __DIR__ . '/../..' . '/src/ExoTDD.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -489,6 +488,7 @@ class ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PrimeFactors' => __DIR__ . '/../..' . '/src/PrimeFactors.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -703,9 +703,9 @@ class ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3dd5d90eb90b8efc8d4276401e46e643::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitafe7b78787dd2c940fa4dc325986d539::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitafe7b78787dd2c940fa4dc325986d539::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitafe7b78787dd2c940fa4dc325986d539::$classMap;
 
         }, null, ClassLoader::class);
     }
